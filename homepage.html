@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Document</title>
+    <style>
+    .textbox {
+        font-size: 50px;
+        margin: 10px;
+    }
+
+    .buttonbox {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+
+    .buttonbox span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    }
+
+    .buttonbox span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+
+    .buttonbox:hover span {
+    padding-right: 25px;
+    }
+
+    .buttonbox:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="textbox">레이아웃 목록</div>
+    <div class="buttonbox">
+        <li><a href="layout1.html"><span>layout1</a></span></li>
+        <li><a href="layout2.html"><span>layout2</a></span></li>
+        <li><a href="layout3.html"><span>layout3</a></span></li>
+        <li><a href="layout4.html"><span>layout4</a></span></li>
+        <li><a href="layout5.html"><span>layout5</a></span></li>
+        <li><a href="layout6.html"><span>layout6</a></span></li>
+        <li><a href="layout7.html"><span>layout7</a></span></li>
+        <li><a href="coverpage.html"><span>coverpage</a></span></li>
+    </div>
+</body>
+
+</html>
